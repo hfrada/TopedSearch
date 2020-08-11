@@ -6,10 +6,9 @@ jobs:
     defaults: &defaults
       working_directory: ~/repo
       docker:
-        - image: docker:17.05.0-ce-git
+        - image: circleci/node:10.15.3
     steps:
       - checkout
-      - setup_remote_docker
 
       - restore_cache:
           keys:
@@ -34,14 +33,13 @@ jobs:
     defaults: &defaults
       working_directory: ~/repo
       docker:
-        - image: docker:17.05.0-ce-git
+        - image: circleci/node:10.15.3
     steps:
-      - setup_remote_docker
       - attach_workspace:
           at: ~/repo
       - run:
           name: Authenticate with registry
-          command: echo "//registry.npmjs.org/:_authToken=0cf34cf0-0608-4832-8109-ac9372341c8e" > ~/repo/.npmrc
+          command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/repo/.npmrc
       - run:
           name: Publish package
           command: npm publish
