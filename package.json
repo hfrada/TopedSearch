@@ -1,0 +1,22 @@
+{
+  "name": "toped-search",
+  "version": "1.0.0",
+  "description": "Searching some Tokopedia Component",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hfrada/TopedSearch.git"
+  },
+  "author": "HFrada",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hfrada/TopedSearch/issues"
+  },
+  "homepage": "https://github.com/hfrada/TopedSearch#readme"
+}
