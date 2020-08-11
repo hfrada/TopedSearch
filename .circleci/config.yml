@@ -3,10 +3,9 @@ version: 2
 # Use a package of configuration called an orb.
 jobs:
   test:
-    defaults: &defaults
-      working_directory: ~/repo
-      docker:
-        - image: circleci/node:10.15.3
+    working_directory: ~/repo
+    docker:
+      - image: circleci/node:10.15.3
     steps:
       - checkout
 
@@ -30,10 +29,9 @@ jobs:
           root: ~/repo
           paths: .
   deploy:
-    defaults: &defaults
-      working_directory: ~/repo
-      docker:
-        - image: circleci/node:10.15.3
+    working_directory: ~/repo
+    docker:
+      - image: circleci/node:10.15.3
     steps:
       - attach_workspace:
           at: ~/repo
