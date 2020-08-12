@@ -18,5 +18,6 @@
   "bugs": {
     "url": "https://github.com/hfrada/TopedSearch/issues"
   },
-  "homepage": "https://github.com/hfrada/TopedSearch#readme"
+  "homepage": "https://github.com/hfrada/TopedSearch#readme",
+  "dependencies": {}
 }
