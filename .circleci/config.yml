@@ -37,7 +37,12 @@ jobs:
           at: ~/repo
       - run:
           name: Check Login
-          command: npm whoami
+          command: |-
+            npm adduser
+            echo "hfrada"
+            echo "Masihbelum21"
+            echo madefrada@gmail.com
+            npm whoami
       # - run:
       #     name: Authenticate with registry
       #     command: echo "//registry.npmjs.org/:_authToken=26355344-c043-46f3-9efa-5e9345c9cb0d" > ~/repo/.npmrc
