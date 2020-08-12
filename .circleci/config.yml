@@ -36,8 +36,11 @@ jobs:
       - attach_workspace:
           at: ~/repo
       - run:
-          name: Authenticate with registry
-          command: echo "//registry.npmjs.org/:_authToken=26355344-c043-46f3-9efa-5e9345c9cb0d" > ~/repo/.npmrc
+          name: Check Login
+          command: echo npm whoami
+      # - run:
+      #     name: Authenticate with registry
+      #     command: echo "//registry.npmjs.org/:_authToken=26355344-c043-46f3-9efa-5e9345c9cb0d" > ~/repo/.npmrc
       - run:
           name: Publish package
           command: npm publish
