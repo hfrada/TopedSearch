@@ -1,6 +1,6 @@
 {
   "name": "toped-search",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Searching some Tokopedia Component",
   "main": "index.js",
   "directories": {
