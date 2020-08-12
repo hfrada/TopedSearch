@@ -40,7 +40,7 @@ jobs:
           command: npm adduser
           command: echo "hfrada"
           command: echo "Masihbelum21"
-          command: echo madefrada@gmail.com
+          command: echo "madefrada@gmail.com"
           command: npm whoami
       # - run:
       #     name: Authenticate with registry
